@@ -1,1 +1,1 @@
-# SimpleJavascriptProjects
+# BeginnerJavascriptProjects
