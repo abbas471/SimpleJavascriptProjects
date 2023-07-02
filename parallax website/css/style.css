@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400&family=Foldit:wght@200;400;600&family=Montserrat:wght@200;700&family=Open+Sans:wght@300;400;700&family=Roboto:wght@100;300;500;700&family=Work+Sans:ital,wght@0,200;0,300;0,500;1,100;1,300&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    background:#f9f9f9;
+    min-height:100vh;
+    overflow-x:hidden;
+}
+
+header{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    padding:30px 100px;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    z-index:100;
+}
+
+header .logo{
+font-size:2rem;
+color:#359381;
+pointer-events:none;
+margin-right:270px;
+}
+
+header .navigation a{
+    text-decoration:none;
+    color:#359381;
+    padding:6px 15px;
+    border-radius:20px;
+    margin:0 10px;
+    font-weight:600;
+}
+
+header .navigation a:hover , .navigation a.active{
+background:#359381;
+color:#ffff;
+}
+
+.main{
+    overflow:hidden;
+}
+
+.parallax{
+position:relative;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.parallax #text{
+position:absolute;
+font-size:5em;
+color:#fff;
+text-shadow:2px 2px 4px rgba(0,0,0,.2);
+/* z-index:20; */
+}
+
+.parallax img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    pointer-events:none;
+}
+
+.sec{
+    position:relative;
+    background:#003329;
+    padding:100px;
+}
+
+.sec h2{
+font-size:3em;
+color:#fff;
+margin-bottom:10px;
+}
+
+.sec p{
+font-size:1em;
+color:#fff;
+font-weight:300;
+}
+
+@media screen and (max-width:960px){
+
+header{
+    padding:15px 20px;
+}
+
+header .logo{
+font-size:1.7rem;
+margin-right:100px;
+
+}
+
+header .navigation a{
+    padding:4px 12px;
+    margin:0 10px;
+    font-size:15px;
+} 
+.parallax #text{
+    font-size:3.5em;
+    }
+}
+
+@media screen and (max-width:610px){
+
+header{
+    padding:15px 1px;
+}
+
+header .logo{
+font-size:1.7rem;
+margin-right:60px;
+}
+
+header .navigation a{
+    padding:4px 12px;
+    margin:0 10px;
+    font-size:11px;
+} 
+}
+
+@media screen and (max-width:415px){
+
+header{
+    padding:15px 1px;
+}
+
+header .logo{
+font-size:1.7rem;
+margin-right:60px;
+}
+
+header .navigation a{
+    padding:4px 12px;
+    margin:0 10px;
+    font-size:11px;
+} 
+header .navigation {
+display:none;
+} 
+}
