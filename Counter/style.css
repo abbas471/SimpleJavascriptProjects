@@ -1,0 +1,19 @@
+.container {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#timer {
+  font-size: 36px;
+  margin-top: 20px;
+}
+
+#inputForm {
+  margin-top: 20px;
+}
+
+@media (max-width: 576px) {
+  #timer {
+    font-size: 24px;
+  }
+}

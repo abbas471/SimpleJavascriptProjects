@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <title>Counter</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Countdown Timer</h1>
+    <div id="timer" class="text-center">
+      <span id="days">00</span> days
+      <span id="hours">00</span> hours
+      <span id="minutes">00</span> minutes
+      <span id="seconds">00</span> seconds
+    </div>
+    <form id="inputForm">
+      <div class="form-group">
+        <label for="datetimeInput">Set Target Date and Time:</label>
+        <input type="datetime-local" id="datetimeInput" class="form-control">
+      </div>
+      <button type="submit" class="btn btn-primary">Start Countdown</button>
+    </form>
+  </div>
+  <script src="./app.js"></script>
+  
+</body>
+</html>
