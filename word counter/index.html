@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Word Counter</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Word Counter</h1>
+    <div class="form-group">
+      <label for="textInput">Enter Text:</label>
+      <textarea class="form-control" id="textInput" rows="5"></textarea>
+      <div id="error" class="text-danger"></div> <!-- Display error message here -->
+    </div>
+    <button class="btn btn-primary" onclick="countWords()">Count Words</button>
+    <div class="mt-3">
+      <label for="result">Number of Words:</label>
+      <span id="result"></span>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
