@@ -1,0 +1,37 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+h1 {
+  color: #333;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #215923;
+}
+
+@media screen and (max-width: 600px) {
+  /* Adjust styles for smaller screens */
+  body {
+    margin-top: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+  
+  button {
+    padding: 8px 16px;
+  }
+}
