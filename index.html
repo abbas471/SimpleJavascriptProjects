@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./style.css">
+    <title>Responsive navbar</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">Logo</a></div>
+            <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+            <a href="" class="action_btn">Get Started</a>
+            <div class="toggle-btn">
+                <i class='bx bx-menu'></i>
+            </div>
+        </div>
+
+        <div class="dropDown open">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+            <li> <a href="" class="action_btn">Get Started</a></li>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>welcom</h1>
+            <p>Welcome to Abbas GITHUB follow for more free projects <br> totam ad dolores iusto eligendi, fuga enim? Hic, praesentium a. Quibusdam dolores, ab amet dolorum facere magni!</p>
+        </section>
+    </main>
+
+    <script>
+        let toggleBtn = document.querySelector(".toggle-btn")
+        let toggleBtnIcon = document.querySelector(".toggle-btn i")
+        let dropDownMenu = document.querySelector(".dropDown")
+
+        toggleBtn.onclick = function() {
+            dropDownMenu.classList.toggle("open")
+            let isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen ? 'bx bx-message-alt-x' : 'bx bx-menu'
+        }
+    </script>
+</body>
+
+</html>
